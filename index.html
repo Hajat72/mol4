@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Site</title>
+    <style>
+        /* General reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: inline-block;
+            width: 80%;
+            margin: 1rem auto;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 0.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ddd;
+        }
+
+        nav img {
+            width: 10%;
+            vertical-align: middle;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #333;
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 40% 40%;
+            justify-content: space-between;
+            align-items: center;
+            row-gap: 20px;
+            padding: 1rem;
+        }
+
+        .grid img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .grid article {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 1rem;
+            background-color: #fff;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 1rem;
+            gap: 1rem;
+        }
+
+        .flex div {
+            flex: 1 1 200px;
+            max-width: 300px;
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to Main Content link -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <header>
+        <h1>Welcome to My Original Site</h1>
+    </header>
+
+    <nav>
+        <img src="https://avatars.mds.yandex.net/i?id=5b40b9cbfc73bce647f9ff721270ba19a34e300f-10701951-images-thumbs&n=13" alt="Site Logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section class="grid">
+            <article>
+                <img src="https://avatars.mds.yandex.net/i?id=adae2e99936e817bcac7bcd9dc9fe71ffdcf8f50-5242719-images-thumbs&n=13" alt="Scenic Image 1">
+                <p>Explore the beauty of our services with this scenic view.</p>
+            </article>
+            <article>
+                <img src="https://avatars.mds.yandex.net/i?id=adae2e99936e817bcac7bcd9dc9fe71ffdcf8f50-5242719-images-thumbs&n=13" alt="Scenic Image 2">
+                <p>Discover what makes us unique in delivering quality experiences.</p>
+            </article>
+        </section>
+
+        <section class="flex">
+            <div>
+                <img src="https://avatars.mds.yandex.net/i?id=48dfc6731c583a100f331a08bd6f3f6eb30ecc09-5233564-images-thumbs&n=13" alt="Flexbox Item 1">
+                <p>Our dedicated team is here to help.</p>
+            </div>
+            <div>
+                <img src="https://avatars.mds.yandex.net/i?id=48dfc6731c583a100f331a08bd6f3f6eb30ecc09-5233564-images-thumbs&n=13" alt="Flexbox Item 2">
+                <p>Experience unmatched support and care.</p>
+            </div>
+            <div>
+                <img src="https://avatars.mds.yandex.net/i?id=48dfc6731c583a100f331a08bd6f3f6eb30ecc09-5233564-images-thumbs&n=13" alt="Flexbox Item 3">
+                <p>We value your satisfaction above all.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Original Site. All rights reserved.</p>
+    </footer>
+</body>
+</html>
